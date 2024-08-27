@@ -1,3 +1,6 @@
+import { AiFillProfile } from "react-icons/ai";
+import { TbJewishStarFilled } from "react-icons/tb";
+import { IoBag } from "react-icons/io5";
 const Header = () => {
   return (
     <>
@@ -22,7 +25,6 @@ const Header = () => {
           </a>
         </nav>
         <div className="search_bar">
-          <span className="material-symbols-outlined search_icon">search</span>
           <input
             className="search_input"
             placeholder="Search for products, brands and more"
@@ -30,15 +32,21 @@ const Header = () => {
         </div>
         <div className="action_bar">
           <div className="action_container">
-            <span className="action_name">Profile</span>
+            <span className="action_name">
+              <AiFillProfile />
+            </span>
           </div>
 
           <div className="action_container">
-            <span className="action_name">Wishlist</span>
+            <span className="action_name">
+              <TbJewishStarFilled />
+            </span>
           </div>
 
           <a className="action_container" href="pages/bag.html">
-            <span className="action_name">Bag</span>
+            <span className="action_name">
+              <IoBag />
+            </span>
             <span className="bag-item-count">0</span>
           </a>
         </div>
